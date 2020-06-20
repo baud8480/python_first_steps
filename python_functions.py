@@ -1,5 +1,6 @@
-
-# Simple Date conversion function : 10-character-string -> 6-character-string (universal date)
+############################################################
+# Simple Date conversion function :
+# 10-character-string -> 6-character-string (universal date)
 # 'dd.mm.yyyy' -> 'yyyymmdd'
 def EuroToStandardDateConversion(euroDate):
     yyyy = euroDate[6:10]
@@ -20,9 +21,10 @@ d4 = EuroToStandardDateConversion(date_04)
 
 print d1,d2,d3,d4
 
+###################################################
 # Simple Time-Formatting funcion
 # 4-character-string for time -> 5-character-string
-# '2030' -> '20:30'
+# 'hhmm' -> 'hh:mm'
 def ConvertToTime(hhmm):
     return hhmm[0:2]+ ':' + hhmm[2:4]
 
